@@ -22,14 +22,16 @@ function Dashboard() {
             <input type="range" min="0" max="5" value={rateFilter[0]} onChange={e => setRateFilter([e.target.value, rateFilter[1]])} />
             <input type="range" min="0" max="5" value={rateFilter[1]} onChange={e => setRateFilter([rateFilter[0], e.target.value])} />
             <table>
-                {filteredCharities.map(charity => (
-                    <tr key={charity.id}>
-                        <td>{charity.name}</td>
-                        <td>{charity.description}</td>
-                        <td>{charity.rate}</td>
-                        <td><Link to={`/charity/${charity.id}`}>Details</Link></td>
-                    </tr>
-                ))}
+                <tbody>
+                    {filteredCharities.map(charity => (
+                        <tr key={charity.id}>
+                            <td>{charity.name}</td>
+                            <td>{charity.description}</td>
+                            <td>{charity.rate}</td>
+                            <td><Link to={`/charity/${charity.id}`}>Details</Link></td>
+                        </tr>
+                    ))}
+                </tbody>
             </table>
         </div>
     );
