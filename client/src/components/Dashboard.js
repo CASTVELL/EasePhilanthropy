@@ -9,7 +9,7 @@ function Dashboard() {
 
     useEffect(() => {
         // Replace with your actual API endpoint
-        axios.get('https://api.example.com/charities')
+        axios.get('http://localhost:3001/charities')
             .then(response => {
                 setCharities(response.data);
             });

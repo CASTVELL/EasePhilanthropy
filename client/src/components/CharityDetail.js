@@ -9,7 +9,7 @@ function CharityDetail() {
 
     useEffect(() => {
         // Replace with your actual API endpoint
-        axios.get(`https://api.example.com/charities/${id}`)
+        axios.get(`http://localhost:3001/charities/${id}`)
             .then(response => {
                 setCharity(response.data);
             });
