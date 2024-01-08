@@ -1,0 +1,53 @@
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.filter-section {
+  flex: 1;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.charities-section {
+  flex: 3;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Estilos para la tabla */
+.charities-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.charities-section table td,
+table th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.charities-section table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Estilos para el input range */
+.filter-section input[type="range"] {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
