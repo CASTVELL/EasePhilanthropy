@@ -20,7 +20,7 @@ function Dashboard() {
     return (
         <div>
             <input type="range" min="0" max="5" value={rateFilter[0]} onChange={e => setRateFilter([e.target.value, rateFilter[1]])} />
-            <input type="range" min="0" max="5" value={rateFilter[1]} onChange={e => setRateFilter([rateFilter[0], e.target.value])} />
+            {/*<input type="range" min="0" max="5" value={rateFilter[1]} onChange={e => setRateFilter([rateFilter[0], e.target.value])} />*/}
             <table>
                 <tbody>
                     {filteredCharities.map(charity => (
