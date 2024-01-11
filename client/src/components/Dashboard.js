@@ -9,7 +9,6 @@ function Dashboard() {
     const [rateFilter, setRateFilter] = useState([0, 5]);
 
     useEffect(() => {
-        // Replace with your actual API endpoint
         axios.get('http://localhost:3001/charities')
             .then(response => {
                 setCharities(response.data);
